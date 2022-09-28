@@ -151,4 +151,10 @@ button:hover {
   .wrapper {
     height: 100vh;
   }
+  .desk {
+    display: none;
+  }
+  .mob {
+    display: flex;
+  }
 }
