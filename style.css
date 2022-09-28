@@ -121,6 +121,7 @@ button:hover {
 }
 @media screen and (max-width: 450px) {
   .heroSection {
+    margin-top: 1rem;
     width: 20rem;
     height: 44rem;
     display: grid;
@@ -131,7 +132,7 @@ button:hover {
     height: 22rem;
   }
   .heroImage img {
-    margin-top: 1rem;
+    
     width: 20rem;
     height: 22rem;
     border-top-left-radius: 10px;
