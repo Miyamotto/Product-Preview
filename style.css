@@ -34,7 +34,7 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
   gap: 1rem;
   color: gray;
   padding-top: 1rem;
