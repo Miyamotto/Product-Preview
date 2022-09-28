@@ -34,11 +34,15 @@
 .heroText {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
   color: gray;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.mob {
+  display: none;
 }
 .gray {
   font-size: 1.5rem;
@@ -88,7 +92,7 @@ button:hover {
 @media screen and (max-width: 715px) {
   .heroSection {
     width: 28rem;
-    height: 64rem;
+    height: 56rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 1rem;
@@ -97,10 +101,54 @@ button:hover {
   .wrapper {
     height: 100%;
   }
+  .heroImage {
+    width: 28rem;
+    height: 28rem;
+  }
   .heroImage img {
     width: 28rem;
+    height: 28rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
+  }
+  .desk {
+    display: none;
+  }
+  .mob {
+    display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heroSection {
+    width: 20rem;
+    height: 44rem;
+  }
+  .heroImage {
+    width: 20rem;
+    height: 22rem;
+  }
+  .heroImage img {
+    width: 20rem;
+    height: 22rem;
+  }
+  .lower {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    max-width: 18rem;
+  }
+  .heroText {
+    height: 22rem;
+  }
+  .heroText h1 {
+    font-size: 2rem;
+  }
+  .lower {
+    font-size: 1rem;
+  }
+  .wrapper {
+    height: 100vh;
   }
 }
