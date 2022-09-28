@@ -123,14 +123,20 @@ button:hover {
   .heroSection {
     width: 20rem;
     height: 44rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
   .heroImage {
     width: 20rem;
     height: 22rem;
   }
   .heroImage img {
+    margin-top: 1rem;
     width: 20rem;
     height: 22rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
   .lower {
     font-size: 1rem;
@@ -149,12 +155,6 @@ button:hover {
     font-size: 1rem;
   }
   .wrapper {
-    height: 100vh;
-  }
-  .desk {
-    display: none;
-  }
-  .mob {
-    display: flex;
+    height: 100%;
   }
 }
